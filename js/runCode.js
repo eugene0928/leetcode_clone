@@ -11,7 +11,7 @@ form.onsubmit = (event) => {
             // let res = func( allProblems[+problem.value - 1].tests[l].test)
             switch(num) {
                 case 1: 
-                     func = new Function('a', `
+                    func = new Function('a', `
                     ${textArea.value}
             
                     return isPalindrome(a)
@@ -25,6 +25,7 @@ form.onsubmit = (event) => {
                     `)
                     break;
                 case 3: 
+                
                      func = new Function('a', `
                         ${textArea.value}
             
