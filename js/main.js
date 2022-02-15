@@ -1,24 +1,38 @@
-const problem = document.querySelector("#problem")
-const problemHeading = document.querySelector("#problem-heading")
-const probContent = document.querySelector("#prob-content")
+const ul = document.querySelector("#ul")
 const li1 = document.querySelector("#li1")
-const divContent = document.querySelector("#stdio-content")
-const divContent2 = document.querySelector("#stdio-content2")
 const li2 = document.querySelector("#li2")
 const form = document.querySelector("#form")
 const textArea = document.querySelector("#area")
-const ul = document.querySelector("#ul")
+const problem = document.querySelector("#problem")
+const probContent = document.querySelector("#prob-content")
+const divContent = document.querySelector("#stdio-content")
+const divContent2 = document.querySelector("#stdio-content2")
+const problemHeading = document.querySelector("#problem-heading")
 
 
 problem.onclick = () => {
     
-    renderProblems(problem.value)
+    if(problem.value == 0) {
+        divContent.innerHTML = null
+        divContent2.innerHTML = null
+        probContent.innerHTML = null
+        textArea.value = null
+        problemHeading.innerHTML = null
 
+        return
+    }
+    renderProblems(problem.value)
 }
 
 
 function renderProblems( value ) {
     let problem = allProblems.find( obj => obj.id == value)
+
+    textArea.value = `function ${problem.funcName}(num) {
+        // write your code here
+
+
+}`
 
     // first example
     divContent.innerHTML = null
