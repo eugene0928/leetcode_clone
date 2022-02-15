@@ -5,6 +5,9 @@ const li1 = document.querySelector("#li1")
 const divContent = document.querySelector("#stdio-content")
 const divContent2 = document.querySelector("#stdio-content2")
 const li2 = document.querySelector("#li2")
+const form = document.querySelector("#form")
+const textArea = document.querySelector("#area")
+const ul = document.querySelector("#ul")
 
 
 problem.onclick = () => {
