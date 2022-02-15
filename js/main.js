@@ -18,6 +18,7 @@ problem.onclick = () => {
         probContent.innerHTML = null
         textArea.value = null
         problemHeading.innerHTML = null
+        ul.innerHTML = null
 
         return
     }
