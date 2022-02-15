@@ -23,6 +23,7 @@ problem.onclick = () => {
         return
     }
     renderProblems(problem.value)
+    ul.innerHTML = null
 }
 
 
