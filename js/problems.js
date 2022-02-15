@@ -2,7 +2,7 @@ const allProblems = [
     {
         id: 1,
         heading: "1.Palindrome Number",
-        definition: `Given an integer x, return true if x is palindrome integer.
+        definition: `Write "isPalindrome" function. Given an integer x, return true if x is palindrome integer.
         An integer is a palindrome when it reads the same backward as forward.
         For example, 121 is a palindrome while 123 is not.`, 
         example1: {input: 121, answer: true},
@@ -18,19 +18,20 @@ const allProblems = [
             {test: 75412, answer: false},
             {test: 2589852, answer: true},
             {test: 11111, answer: true},
-         ]
+         ],
+        funcName: 'isPalindrome'
 
     }, 
 
     {
         id: 2,
         heading: "2.Power of number",
-        definition: `Given a integer number calculate its fifth power without using in-built functions.
+        definition: `Write "numPower" function. Given a integer number calculate its fifth power without using in-built functions.
         For example, 2 where a = 2 and output will be 32.`,
         example1: {input: 2, answer: 32},
         example2: {input: 3, answer: 243},
         tests: [
-            {test: 1, answer: 1},
+            {test: 3, answer: 243},
             {test: 4, answer: 1024},
             {test: 6, answer: 7776},
             {test: 10, answer: 100000},
@@ -39,15 +40,16 @@ const allProblems = [
             {test: 3, answer: 243},
             {test: 18, answer: 1889568},
             {test: 11, answer: 161051},
-            {test: 0, answer: 0},
+            {test: 2, answer: 32},
 
-        ]
+        ],
+        funcName: "numPower"
     }, 
 
     {
         id: 3,
         heading: "3.Find biggest",
-        definition: `Given array find its largest element without using in-built functions.
+        definition: `Write "biggest" function. Given array find its largest element without using in-built functions.
         For example, [2, 5, 7, 19] and output will be 19.`,
         example1: {input: [2, 5, 7, 19], answer: 19},
         example2: {input: [1], answer: 1},
@@ -63,13 +65,14 @@ const allProblems = [
             {test: [1, 19, 29, 110], answer: 110},
             {test: [0], answer: 0},
 
-        ]
+        ],
+        funcName: "biggest"
     },
 
     {
         id: 4,
         heading: "4.Sum",
-        definition: `Given array calculate its sum.
+        definition: `Write "sum" function. Given array calculate its sum.
         For example, [1, 2, 3, 4] and output will be 10 as 1+2+3+4=10`,
         example1: {input: [1,2,3,4], answer: 10},
         example2: {input: [-2, -4, 10], answer: 4},
@@ -84,13 +87,14 @@ const allProblems = [
             {test: [10, 10, 9, 10], answer: 39},
             {test: [10, 10, 10, 10], answer: 40},
             {test: [0, 0, 0, -1, 1, -1, 1], answer: 0}
-        ]
+        ],
+        funcName: "sum"
     }, 
 
     {
         id: 5,
         heading: "5.Find longest string",
-        definition: `Given array find longest string.
+        definition: `Write "longestStr" function. Given array find longest string.
         For example, ['hello', 'hi', 'go'] and output will be 'hello' as its  length is the largest in the array.`,
         example1: {input: ['hello', 'hi', 'go'], answer: 'hello'},
         example2: {input: ['a'], answer: 'a'},
@@ -105,6 +109,7 @@ const allProblems = [
             {test: ['boy', 'toy', 'ball', 't'], answer: 'ball'},
             {test: ['doll', 'ball', 'bell', 'ring'], answer: 'doll'},
             {test: ['t', 'tt', 'tt', 't'], answer: 'tt'},
-        ]
+        ],
+        funcName: "longestStr"
     }
 ]
