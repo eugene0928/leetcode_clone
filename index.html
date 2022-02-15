@@ -16,6 +16,7 @@
 
                 <div class="problems-header">
                     <select name="problem" id="problem">
+                        <option value="0"></option>
                         <option value="1">Example 1</option>
                         <option value="2">Example 2</option>
                         <option value="3">Example 3</option>
@@ -24,48 +25,48 @@
                     </select>
                 </div>
                 <div class="conditions">
-                    <h1 class="condition-header">
-                        1. Two Sum
+                    <h1 class="condition-header" id="problem-heading">
+                        <!-- 1. Two Sum -->
                     </h1>
-                    <p class="condition-description">
-                        Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+                    <p class="condition-description" id="prob-content">
+                        <!-- Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. -->
                     </p>
                 </div>
                 <div class="stdio">
                     <ul>
                         <!-- Example item -->
 
-                        <li>
+                        <li id="li1">
                             <div class="stdio-header">
                                 Example 1:
                             </div>
-                            <div class="stdio-content">
+                            <div class="stdio-content" id="stdio-content">
                                 <div class="stdio-code">
-                                    <span>Input:</span> <code>nums = [2,7,11,15], target = 9</code>
+                                    <!-- <span>Input:</span> <code>nums = [2,7,11,15], target = 9</code> -->
                                 </div>
                                 <div class="stdio-code">
-                                    <span>Output:</span> <code>[0,1]</code>
+                                    <!-- <span>Output:</span> <code>[0,1]</code> -->
                                 </div>
-                                <div class="stdio-code">
+                                <!-- <div class="stdio-code">
                                     <span>Explanation:</span> <code>Because nums[0] + nums[1] == 9, we return [0, 1].</code>
-                                </div>
+                                </div> -->
                             </div>
                         </li>
 
-                        <li>
+                        <li id="li2">
                             <div class="stdio-header">
                                 Example 2:
                             </div>
-                            <div class="stdio-content">
+                            <div class="stdio-content" id="stdio-content2">
                                 <div class="stdio-code">
-                                    <span>Input:</span> <code>nums = [2,7,11,15], target = 9</code>
+                                    <!-- <span>Input:</span> <code>nums = [2,7,11,15], target = 9</code> -->
                                 </div>
                                 <div class="stdio-code">
-                                    <span>Output:</span> <code>[0,1]</code>
+                                    <!-- <span>Output:</span> <code>[0,1]</code> -->
                                 </div>
-                                <div class="stdio-code">
+                                <!-- <div class="stdio-code">
                                     <span>Explanation:</span> <code>Because nums[0] + nums[1] == 9, we return [0, 1].</code>
-                                </div>
+                                </div> -->
                             </div>
                         </li>
 
@@ -75,8 +76,8 @@
             </div>
             <div class="right-side">
                 <div class="right-side-content">
-                    <form>
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <form id="form">
+                        <textarea name="" id="area" cols="30" rows="10"></textarea>
                         <div class="btn">
                             <div></div>
                             <button type="submit">Submit</button>
@@ -84,13 +85,19 @@
                     </form>
                 </div>  
                 <div class="right-side-status">
-                    <ul>
-                        <li>1. <span class="status">Success <i class="fas fa-check"></i></span></li>
-                        <li>2. <span class="status">Fail <i class="fas fa-times"></i></span></li>
+                    <ul id="ul">
+                        <!-- <li>1. <span class="status">Success <i class="fas fa-check"></i></span></li>
+                        <li>2. <span class="status">Fail <i class="fas fa-times"></i></span></li> -->
                     </ul>
                 </div>
             </div>
         </div>
     </div>
+
+
+    <script src="./js/problems.js"></script>
+    <script src="./js/utils.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/runCode.js"></script>
 </body>
 </html>
